@@ -87,13 +87,14 @@ int main()
 
         string ethiopianMonthNames[12];
         for (int i = 0; i < 12; i++)
+        {
             if (targetYear < 8)
                 ethiopianMonthNames[i] = "";
             else if (isJulian)
                 ethiopianMonthNames[i] = etMonthNamesJC[i];
             else
                 ethiopianMonthNames[i] = etMonthNamesGC[i];
-P
+    }
         for (int i = 0; i < 366; i++)
         {
             ethiopianDates[i] = ethiopianDay;
@@ -220,3 +221,4 @@ P
 
     return 0;
 }
+
